@@ -1,0 +1,12 @@
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\bin\Debug\proyecto final.exe.config
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\bin\Debug\proyecto final.exe
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\bin\Debug\proyecto final.pdb
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto_final.Form1.resources
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto_final.listado_de_ventas.resources
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto_final.menu_de_venta.resources
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto_final.Properties.Resources.resources
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto final.csproj.GenerateResource.Cache
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto final.csproj.CoreCompileInputs.cache
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto final.exe
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto final.pdb
+C:\Users\DAVID MONZÓN\Documents\Visual Studio 2017\projects\proyecto final\proyecto final\obj\Debug\proyecto final.csprojResolveAssemblyReference.cache
