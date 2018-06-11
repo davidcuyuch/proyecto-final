@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="clientes.cs" />
     <Compile Include="empleados.cs" />
+    <Compile Include="factura.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,8 @@
     <Compile Include="menu de venta.Designer.cs">
       <DependentUpon>menu de venta.cs</DependentUpon>
     </Compile>
+    <Compile Include="mes.cs" />
+    <Compile Include="mes2.cs" />
     <Compile Include="producexistente.cs" />
     <Compile Include="productovendido.cs" />
     <Compile Include="Program.cs" />

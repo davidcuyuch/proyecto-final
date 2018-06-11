@@ -15,9 +15,13 @@ namespace proyecto_final
     {
         List<empleados> empleado = new List<empleados>();
         List<productovendido> ventas = new List<productovendido>();
+        List<productovendido> ventasord = new List<productovendido>();
         List<string> nombres = new List<string>();
         string v1;
-        //double v2; 
+        string nombre;
+        int v2;
+        double dat2=0;
+        double suma=0;
         public Form1()
         {
             InitializeComponent();
@@ -27,7 +31,6 @@ namespace proyecto_final
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //string registro;
             string cargar = "empleados.txt";
             FileStream temporal = new FileStream(cargar, FileMode.Open, FileAccess.Read);
             StreamReader lector = new StreamReader(temporal);
@@ -41,34 +44,27 @@ namespace proyecto_final
             }
             for(int x=0; x<empleado.Count; x++)
             {
+                nombre = empleado[x].Nombre;
                 v1 = empleado[x].Contraseña;
                 if (contra == v1)
                 {
-                    menu_de_venta menu = new menu_de_venta();
+                    menu_de_venta menu = new menu_de_venta(nombre);
                     menu.Show();
                 }
             }
             lector.Close();
             
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             listado_de_ventas list = new listado_de_ventas();
             list.Show();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             string cargar = "productos vendidos.txt";
             FileStream temp = new FileStream(cargar, FileMode.Open, FileAccess.Read);
             StreamReader leer = new StreamReader(temp);
-            //string l1 = listBox1.Text;
             while(leer.Peek()>-1)
             {
                 productovendido venta = new productovendido();
@@ -76,18 +72,27 @@ namespace proyecto_final
                 venta.Cantidad = leer.ReadLine();
                 ventas.Add(venta);
             }
+            ventasord= ventas.OrderByDescending(n => n.Nombre).ToList();
             leer.Close();
-            double suma=0;
-            //double n1;
-            //double n2;
-            for(int x=0; x<ventas.Count; x++)
+            for (int x = 0; x < ventasord.Count-1; x++)
             {
-                if (!(nombres.Contains(ventas[x].Nombre)))
+                if (ventasord[x].Nombre == ventasord[x + 1].Nombre)
                 {
-                    nombres.Add(ventas[x].Nombre);
-                    
+                    v2 = Convert.ToInt16(ventasord[x].Cantidad) + v2 ; 
+                }
+                else
+                {
+                    v2 += Convert.ToInt16(ventasord[x].Cantidad);
+                    dat2 = Convert.ToDouble(v2);
+                    suma = suma + dat2;
+                    listBox1.Text = suma.ToString();
+                    listBox1.Items.Add(ventasord[x].Nombre);
+                    listBox1.Items.Add(suma);
+                    suma = 0;
+                    v2 = 0;
                 }
             }
         }
     }
 }
+
