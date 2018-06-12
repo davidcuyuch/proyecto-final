@@ -9,9 +9,11 @@ namespace proyecto_final
     class producexistente
     {
         string nombre;
+        string cantidad;
         string precio;
 
         public string Nombre { get => nombre; set => nombre = value; }
+        public string Cantidad { get => cantidad; set => cantidad = value; }
         public string Precio { get => precio; set => precio = value; }
     }
 }

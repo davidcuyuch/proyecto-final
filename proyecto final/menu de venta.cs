@@ -33,7 +33,7 @@ namespace proyecto_final
         string var2;
         string var3;
         string var4;
-        //string var5;
+        string var5;
         private void button1_Click(object sender, EventArgs e)
         {
          string cargar = "compradores.txt";
@@ -98,6 +98,7 @@ namespace proyecto_final
             scritor.WriteLine(cantidad);
             //apartar codigo
             string contra = comboBox1.Text;
+            string cant = textBoxcant.Text;
             string cargar = "productos tienda.txt";
             FileStream temporal = new FileStream(cargar, FileMode.Open, FileAccess.Read);
             StreamReader lector = new StreamReader(temporal);
@@ -106,17 +107,20 @@ namespace proyecto_final
             {
                 producexistente client = new producexistente();
                 client.Nombre = lector.ReadLine();
+                client.Cantidad = lector.ReadLine();
                 client.Precio = lector.ReadLine();
                 existente.Add(client);
             }
+            lector.Close();
             for (int x = 0; x < existente.Count; x++)
             {
+                var5=existente[x].Cantidad;
                 if (dato == existente[x].Nombre)
                 {
                     variable1 = existente[x].Precio;
                 }
             }
-            lector.Close();
+            if(cant>var5)
             dat = Convert.ToDouble(textBoxcant.Text);
             lb1 = Convert.ToDouble(variable1);
             da = dat * lb1;
@@ -154,6 +158,7 @@ namespace proyecto_final
                 producexistente estado = new producexistente();
                 estado.Nombre = leer.ReadLine();
                 estado.Precio = leer.ReadLine();
+                estado.Cantidad = leer.ReadLine();
                 existente.Add(estado);
             }
             for (int x = 0; x < existente.Count; x++)

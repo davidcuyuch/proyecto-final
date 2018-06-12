@@ -1,12 +1,18 @@
 pringles 
+50
 10
 galleta chiqui
+20
 5
 pollo
+15
 13.5
 yogurt
+50
 3
 leche en polvo
+8
 11
 queso
+9
 6

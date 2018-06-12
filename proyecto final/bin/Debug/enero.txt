@@ -1,18 +1,9 @@
-pringles 
-2
-20
-galleta chiqui
-1
-0
-yogurt
-2
-0
-pollo
-2
-27
 galleta chiqui
 2
 10
-galleta chiqui
-5
-25
+leche en polvo
+2
+22
+pollo
+3
+40.5

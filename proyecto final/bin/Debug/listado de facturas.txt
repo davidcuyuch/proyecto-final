@@ -1,0 +1,28 @@
+enero.txt
+david 
+tt
+90
+pringles 
+2
+20
+enero.txt
+david 
+tt
+90
+galleta chiqui
+2
+10
+enero.txt
+david 
+tt
+90
+leche en polvo
+2
+22
+enero.txt
+david 
+tt
+90
+pollo
+3
+40.5
